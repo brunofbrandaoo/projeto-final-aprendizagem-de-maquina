@@ -1,5 +1,6 @@
 def colorfull_print(text, color):
-    print(f"{color}{text}{'\033[0m'}")
+    reset = '\033[0m'
+    print(f"{color}{text}{reset}")
 
 def line(symbol='=', n=80, color='\033[0m'):
     colorfull_print(symbol * n, color)
